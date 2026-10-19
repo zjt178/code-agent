@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.env
+storage/
+eval/results/
+.pytest_cache/
+*.egg-info/
+
+# 简历素材，仅本地保留
+docs/简历-项目描述.md

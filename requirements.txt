@@ -1,0 +1,20 @@
+# core orchestration
+langgraph>=0.6
+langchain-core>=0.3
+langchain-ollama>=0.2
+# retrieval
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+numpy>=1.26
+jieba>=0.42
+# repo & schemas
+GitPython>=3.1
+pydantic>=2.0
+# service
+fastapi>=0.115
+uvicorn[standard]>=0.30
+python-dotenv>=1.0
+# mcp tool server
+mcp>=1.2,<2
+# test
+pytest>=8.0

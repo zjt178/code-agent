@@ -1,0 +1,26 @@
+{
+  "repo": "samples/buggy_pkg",
+  "note": "人工标注的注入缺陷：每条 = 一个符号上的一个规则类型。未标注但被报出的条目单独统计为'额外发现'。",
+  "labels": [
+    {"symbol_id": "shopcore/api.py::run_backup", "rule_id": "os-system"},
+    {"symbol_id": "shopcore/api.py::pull_repo", "rule_id": "subprocess-shell-true"},
+    {"symbol_id": "shopcore/api.py::fetch_status", "rule_id": "requests-no-timeout"},
+    {"symbol_id": "shopcore/api.py::evaluate_rule", "rule_id": "eval-exec"},
+    {"symbol_id": "shopcore/pricing.py::total_price", "rule_id": "mutable-default-arg"},
+    {"symbol_id": "shopcore/pricing.py::classify_amount", "rule_id": "eq-none"},
+    {"symbol_id": "shopcore/pricing.py::grade", "rule_id": "is-literal"},
+    {"symbol_id": "shopcore/pricing.py::normalize", "rule_id": "unreachable-code"},
+    {"symbol_id": "shopcore/pricing.py::score_order", "rule_id": "high-complexity"},
+    {"symbol_id": "shopcore/pricing.py::summarize", "rule_id": "shadow-builtin"},
+    {"symbol_id": "shopcore/pricing.py::pick", "rule_id": "inconsistent-return"},
+    {"symbol_id": "shopcore/storage.py::read_blob", "rule_id": "pickle-load"},
+    {"symbol_id": "shopcore/storage.py::load_orders", "rule_id": "open-without-with"},
+    {"symbol_id": "shopcore/storage.py::find_order", "rule_id": "sql-fstring"},
+    {"symbol_id": "shopcore/storage.py::export_report", "rule_id": "bare-except"},
+    {"symbol_id": "shopcore/storage.py::export_report", "rule_id": "except-pass"},
+    {"symbol_id": "shopcore/storage.py::build_client", "rule_id": "hardcoded-secret"},
+    {"symbol_id": "shopcore/utils.py::label_map", "rule_id": "duplicate-dict-key"},
+    {"symbol_id": "shopcore/utils.py::build_flags", "rule_id": "mutable-default-arg"},
+    {"symbol_id": "shopcore/utils.py::parse_kv", "rule_id": "deep-nesting"}
+  ]
+}
